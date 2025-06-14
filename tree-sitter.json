@@ -1,0 +1,39 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "mcfunction",
+      "camelcase": "MCFunction",
+      "title": "MC Function",
+      "scope": "source.mcfunction",
+      "file-types": [
+        "mcfunction"
+      ],
+      "injection-regex": "^mcfunction$",
+      "class-name": "TreeSitterMcfunction"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "MC Function grammar for tree-sitter",
+    "authors": [
+      {
+        "name": "Carman Fu",
+        "email": "carman-fu@run.box"
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/Futarimiti/tree-sitter-mcfunction-lang"
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
